@@ -5,8 +5,11 @@
 #The second argument will have a default value of 1
 #This "take" method will return the array with the remaining elements
 
+#len=1 is setting the length to 1
 def take(arr, len=1)
+  #shift will remove the number of elements from your array
   arr.shift(len)
+  #returning the new array
   return arr
 end
 

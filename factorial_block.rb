@@ -1,19 +1,11 @@
-
-
-def factorial(n):
-  
-  count = 1
-  
-  for i in n+1
-    
+def factorial(n)
+  if n <= 1
+      return 1
+  else
+      return n * factorial(n-1)
   end
-
 end
 
+n = gets.to_i
 
-
-
-
-factorial do
-  puts factorial(5)
-end
+print factorial(n)

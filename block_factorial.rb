@@ -13,7 +13,6 @@ n = gets.to_i
 
 #calls the factorial method and passing in the user's input "n".
 #Receives the value back from the method to print
-#prints value
 factorial(n) do |value|
   puts value
 end

@@ -10,3 +10,4 @@ n = 3
 r = 2
 nCr = combination.(n)
 puts nCr.(r)
+

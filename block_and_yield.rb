@@ -1,6 +1,6 @@
 #block_message_printer prints the message if the block exists.
 def block_message_printer
-  message = "Welcome to Block Message Printer"
+  message = "Welcome to Block Message Printer!"
   if block_given?
       yield
   end

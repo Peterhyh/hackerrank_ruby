@@ -8,7 +8,6 @@ def factorial(num)
   yield(result)
 end
 
-
 #Gets input from user and converting it into an integer
 n = gets.to_i
 

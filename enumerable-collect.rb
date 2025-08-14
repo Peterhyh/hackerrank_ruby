@@ -3,15 +3,22 @@
 str = 'Jul qvq gur puvpxra pebff gur ebnq?'
 
 def rot13(secret_messages)
-    secret_messages.chars.map do |char|
-        if char =~ /[A-Za-z]/
-            base = char.ord < 91 ? "A".ord : "a".ord
-            (((char.ord - base + 13) % 26) + base).chr
-        else
-            char
-        end
-    end.join
+    decoded_message = secret_messages.map do |str|
+         str.tr('A-Za-z', 'N-ZA-Mn-za-m')
+    end
+    return decoded_message
 end
+
+# def rot13(secret_messages)
+#     secret_messages.chars.map do |char|
+#         if char =~ /[A-Za-z]/
+#             base = char.ord < 91 ? "A".ord : "a".ord
+#             (((char.ord - base + 13) % 26) + base).chr
+#         else
+#             char
+#         end
+#     end.join
+# end
 
 
 # def rot13(secret_messages)
